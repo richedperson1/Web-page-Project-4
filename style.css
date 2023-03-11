@@ -20,7 +20,7 @@
 
 .container {
     max-width: 1330px;
-    width: min(90%, 1120px);
+    width: min(90%, 1320px);
     margin-inline: auto;
 }
 
@@ -142,7 +142,7 @@ h5 {
 
 /* Media Query section */
 
-@media screen and (max-width:1120px) and (min-width:830px) {
+@media screen and (830px <=width>1230px) {
     .container {
         max-width: 960px;
     }
@@ -154,10 +154,9 @@ h5 {
     }
 }
 
-@media screen and (max-width:830px) {
-    /* .container {
-        max-width: 960px;
-    } */
+
+/* @media screen and (max-width:830px) {
+
     main {
         margin-bottom: 30px;
         width: max(600px, 100%);
@@ -168,15 +167,14 @@ h5 {
     h5 {
         font-size: 0.8rem;
     }
-}
+} */
 
-@media screen and (max-width:750px) {
+@media (max-width:830px) and (min-width:250px) {
     .container {
         max-width: 100%;
-        width: max(600px, 100%);
     }
     .main-headline {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
         gap: 40px;
     }
     .Services-section {
