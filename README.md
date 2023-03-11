@@ -2,4 +2,4 @@
 
 Live Project 
 
-![Web site First look](http://url/to/img.png)
+![Web site First look](./assets/page-look.png)
