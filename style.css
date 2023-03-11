@@ -1,0 +1,139 @@
+/* Importing Font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+/* Changing default parameters */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Making common/utilities class */
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1230px;
+    margin-inline: auto;
+}
+
+.button-shape {
+    padding: 7px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 0.2px solid #5850ef;
+    background-color: #5955b3 !important;
+    color: #ecedf7;
+    cursor: pointer;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Header section */
+
+header {
+    margin-top: 50px;
+}
+
+body {
+    background-color: #fefffe;
+}
+
+.header-section {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-nav-links {
+    gap: 10%;
+    align-items: center;
+}
+
+.nav-bar-links {
+    gap: 23px;
+    font-size: 1.1rem;
+}
+
+
+/* Nav bar links anchor tag */
+
+.nav-bar-links a {
+    text-decoration: none;
+    color: #b9b9b9;
+    /* #b9b9b9 
+    1c1c1d*/
+}
+
+.logo-nav-links img {
+    height: 40px;
+}
+
+
+/* Hover Properties */
+
+.nav-bar-links a:hover {
+    color: #1c1c1d;
+}
+
+
+/* Main Menu of Web page */
+
+main {
+    margin-top: 5%;
+    flex-direction: row-reverse;
+}
+
+.main-headline {
+    /* margin-top: 10px; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Heading Elements */
+
+.Services-section {
+    width: 30%;
+    /* align-items: center; */
+}
+
+
+/* Main Heading attribute */
+
+.main-heading-h1 {
+    width: 100%;
+    font-size: 4rem;
+}
+
+.Crush {
+    color: #5955b3;
+}
+
+h5 {
+    color: #9d9d9d;
+}
+
+.services {
+    margin-top: 30px;
+    width: 60%;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+
+/* Image attribute */
+
+.main-heading-img {
+    width: 65%;
+}
