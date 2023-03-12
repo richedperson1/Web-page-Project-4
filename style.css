@@ -132,7 +132,10 @@ h5 {
     margin-top: 30px;
     width: 60%;
     font-size: 1.3rem;
-    /* padding: 20px; */
+}
+
+.main-heading-h1 {
+    font-size: 2.1rem;
 }
 
 
@@ -145,8 +148,6 @@ h5 {
 
 /* Media Query section */
 
-@media only screen and (min-width: 650px) and (max-width: 1050) {}
-
 @media only screen and (min-width: 200px) and (max-width: 650px) {
     .nav-bar-links {
         display: none;
@@ -158,9 +159,15 @@ h5 {
     .Services-section {
         width: 80%;
         align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     h5 {
         font-size: 1.1rem;
+        width: 70%;
+    }
+    .main-heading-h1 {
+        font-size: 2.1rem;
     }
     .main-heading-img {
         width: 90%;
@@ -173,7 +180,7 @@ h5 {
         width: min(90%, 150px);
     }
     .header-section {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .logo-nav-links img {
         width: 55%;
