@@ -11,22 +11,32 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --navbar-link-color: #b9b9b9;
+}
+
 
 /* Making common/utilities class */
+
+.container {
+    max-width: 1320px;
+    /* width: min(600px, 90%); */
+    margin-inline: auto;
+}
 
 .flex {
     display: flex;
 }
 
 .container {
-    max-width: 1330px;
-    width: min(90%, 1320px);
+    max-width: 1320px;
+    width: min(1320px, 90%);
     margin-inline: auto;
 }
 
 .button-shape {
     padding: 7px;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     border-radius: 10px;
     border: 0.2px solid #5850ef;
     background-color: #5955b3 !important;
@@ -43,41 +53,30 @@
 
 /* Header section */
 
-header {
-    margin-top: 50px;
-}
-
-body {
-    background-color: #fefffe;
-}
-
 .header-section {
+    margin-top: 20px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .logo-nav-links {
-    gap: 10%;
+    gap: 20px;
     align-items: center;
 }
 
-.nav-bar-links {
-    gap: 23px;
-    font-size: 1.1rem;
+.logo-nav-links img {
+    width: 20%;
 }
 
 
 /* Nav bar links anchor tag */
 
-.nav-bar-links a {
-    text-decoration: none;
-    color: #b9b9b9;
-    /* #b9b9b9 
-    1c1c1d*/
+nav a {
+    color: var(--navbar-link-color);
 }
 
-.logo-nav-links img {
-    height: 40px;
+.nav-bar-links {
+    display: flex;
+    gap: 30px;
 }
 
 
@@ -112,9 +111,13 @@ main {
 
 /* Main Heading attribute */
 
+main {
+    margin-bottom: 50px;
+}
+
 .main-heading-h1 {
     width: 100%;
-    font-size: 4rem;
+    /* font-size: 4rem; */
 }
 
 .Crush {
@@ -129,7 +132,7 @@ h5 {
     margin-top: 30px;
     width: 60%;
     font-size: 1.3rem;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 
@@ -142,36 +145,11 @@ h5 {
 
 /* Media Query section */
 
-@media screen and (830px <=width>1230px) {
-    .container {
-        max-width: 960px;
-    }
-    main {
-        margin-bottom: 30px;
-    }
-    .main-heading-h1 {
-        font-size: 3rem;
-    }
-}
+@media only screen and (min-width: 650px) and (max-width: 1050) {}
 
-
-/* @media screen and (max-width:830px) {
-
-    main {
-        margin-bottom: 30px;
-        width: max(600px, 100%);
-    }
-    .main-heading-h1 {
-        font-size: 2.2rem;
-    }
-    h5 {
-        font-size: 0.8rem;
-    }
-} */
-
-@media (max-width:830px) and (min-width:250px) {
-    .container {
-        max-width: 100%;
+@media only screen and (min-width: 200px) and (max-width: 650px) {
+    .nav-bar-links {
+        display: none;
     }
     .main-headline {
         flex-direction: column-reverse !important;
@@ -187,7 +165,17 @@ h5 {
     .main-heading-img {
         width: 90%;
     }
+    .button-shape {
+        /* width: 90%; */
+        font-size: 0.9rem;
+    }
     .services {
-        width: 40%;
+        width: min(90%, 150px);
+    }
+    .header-section {
+        justify-content: space-evenly;
+    }
+    .logo-nav-links img {
+        width: 55%;
     }
 }
