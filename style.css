@@ -72,6 +72,7 @@
 
 nav a {
     color: var(--navbar-link-color);
+    text-decoration: none;
 }
 
 .nav-bar-links {
